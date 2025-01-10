@@ -1,0 +1,25 @@
+# First floating number
+x = 134.71
+
+# Second floating number
+y = 44.88
+
+# Convert first floating to integer
+a = int(x)
+
+# Convert second floating to integer
+b = int(y)
+
+# Perform integer division
+integer_division = a // b
+
+# Perform float division
+float_division = a / b
+
+# Perform modulo operation
+modulo_division = a % b
+
+# Print the results
+print(integer_division)
+print(float_division)
+print(modulo_division)

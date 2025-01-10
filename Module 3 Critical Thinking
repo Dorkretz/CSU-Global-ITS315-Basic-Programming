@@ -1,0 +1,24 @@
+#Input
+year = int(1984)
+
+# Value ranges by years
+if 1962 <= year <= 1964:
+    value = "$18,500"
+elif 1965 <= year <= 1968:
+    value = "$6,000"
+elif 1969 <= year <= 1971:
+    value = "$12,000"
+elif 1972 <= year <= 1975:
+    value = "$48,000"
+elif 1976 <= year <= 1980:
+    value = "$200,000"
+elif 1981 <= year <= 1985:
+    value = "$650,000"
+elif 1986 <= year <= 2012:
+    value = "$35,000,000"
+elif 2013 <= year <= 2014:
+    value = "$52,000,000"
+else:
+    value = "Value not available for this year"
+
+print("Ferrari GTO value in", year, "was:", value)

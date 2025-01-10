@@ -1,0 +1,16 @@
+def cartesian_product(A, B):
+    result = []
+    for a in A:
+        for b in B:
+            result.append((a, b))
+    return result
+
+# Get input lists from the user
+A = list(map(int, input("Enter the elements of list A, separated by spaces: ").split()))
+B = list(map(int, input("Enter the elements of list B, separated by spaces: ").split()))
+
+# Compute the Cartesian product
+AxB = cartesian_product(A, B)
+
+# Print the result
+print(f"AxB = {AxB}")

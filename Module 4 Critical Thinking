@@ -1,0 +1,27 @@
+def is_valid_grade(input_str):
+    try:
+        float(input_str)
+        return True
+    except ValueError(input_str):
+        return False
+
+
+grades = []
+
+# Loop to read five grades from the user
+for i in range(5):
+    grade_str = input(f"Enter grade {i + 1}: ")
+    while not is_valid_grade(grade_str):
+        print("Invalid input!")
+        grade_str = input(f"Enter grade {i + 1}: ")
+    grades.append(float(grade_str))
+
+# Calculate average, maximum, and minimum
+average_grade = sum(grades) / len(grades)
+max_grade = max(grades)
+min_grade = min(grades)
+
+# Print results
+print(f"Average Grade: {average_grade:.2f}")
+print(f"Maximum Grade: {max_grade:.2f}")
+print(f"Minimum Grade: {min_grade:.2f}")

@@ -1,0 +1,21 @@
+def process_strings(string1, string2, string3):
+    # Concatenate the first two strings
+    concatenated = string1 + string2
+
+    # Print the third string in reverse
+    print("Reversed third string:", string3[::-1])
+
+    # Return the result
+    return concatenated
+
+
+# Prompt the user for three strings
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+string3 = input("Enter the third string: ")
+
+# Call the function with the three strings
+result = process_strings(string1, string2, string3)
+
+# Print the concatenated result
+print("Concatenated result:", result)

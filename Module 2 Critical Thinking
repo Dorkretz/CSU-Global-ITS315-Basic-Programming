@@ -1,0 +1,25 @@
+s ='Hello world this is my module 2 assignment!'
+
+#Alphanumeric
+alphanumeric = any(t.isalnum() for t in s)
+print(alphanumeric)  # Print True or False
+
+#Alphabetical
+alpha = any(t.isalpha() for t in s)
+print(alpha)  # Print True or False
+
+#Digits
+digits = any(t.isdigit() for t in s)
+print(digits)  # Print True or False
+
+#Lowercase
+lowercase = any(t.islower() for t in s)
+print(lowercase)  # Print True or False
+
+#Uppercase
+uppercase = any(t.isupper() for t in s)
+print(uppercase)  # Print True or False
+
+#Check string length
+if len(s) >= 50:
+ print("The string is greater than 50 characters!")
